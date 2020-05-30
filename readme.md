@@ -4,12 +4,12 @@ Envie mensagens para o discord com PHP
 # Install
 Rode o comando abaixo na raiz do seu projeto utilizando composer
 
-```
+```cmd
 composer install rbezerra/discordhook
 ```
 
 # Exemplo simples
-```
+```php
 
 use \DiscordHook\Notify;
 
@@ -26,7 +26,7 @@ $notify = Notify::url($urlWebHook)
 ```
 
 # Exemplo em forma de bloco
-```
+```php
 
 $notify = Notify::url($urlWebHook,'embed')
    ->title("teste title")
@@ -37,7 +37,7 @@ $notify = Notify::url($urlWebHook,'embed')
 ```
 
 # Exemplo com varios blocos
-```
+```php
 
 $embed = new \DiscordHook\Embed;
 $embed->title = 'embed 1';
